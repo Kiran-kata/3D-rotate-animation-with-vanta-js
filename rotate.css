@@ -1,0 +1,98 @@
+/* Import DynaPuff font */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DynaPuff', cursive;
+}
+
+/* Remove outline on focus */
+select:focus, input:focus, button:focus {
+    outline: none;
+}
+
+/* Body Styling */
+body {
+    background-color: #1a1a2e; /* Deep Navy Blue */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; /* Required for proper Layering */
+}
+
+/* Background container for vanta.js */
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Places background behind content */
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* ENsures content is above vanta.js */
+}
+
+/* Box Animation */
+.box {
+    transform-style: preserve-3d;
+    animation: animate 7s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+/* Span */
+.box span {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 90%, transparent);
+    text-transform: uppercase;
+    line-height: 0.76em;
+    position: absolute;
+    color: #f8f9fa; /* Soft White */
+    font-size: 3.5em;
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 0px 10px;
+    font-family: 'DynaPuff', cursive;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(109px);
+}
+
+/* i Element */
+.box span i {
+    font-style: initial;
+}
+
+.box span i:nth-child(1) {
+    color: #ff6b6b; /* Coral Red */
+}
+
+.box span i:nth-child(2) {
+    color: #48cae4; /* Bright Cyan */
+}
+
+/* Animation */
+@keyframes animate {
+    0% {
+        transform: perspective(500px) rotateX(0deg) rotate(5deg);
+    }
+    100% {
+        transform: perspective(50px) rotateX(360deg) rotate(5deg);
+    }
+}
+
+/* Media Query */
+@media (max-width: 800px) {
+    /* Add responsive styles here */
+    .box span {
+
+      font-size: 2.5em;
+    }
+}

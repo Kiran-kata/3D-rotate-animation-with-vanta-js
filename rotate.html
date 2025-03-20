@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 3D Rotate Animation</title>
+	<link rel="stylesheet" type="text/css" href="rotate.css">
+	<link href="'https://fonts.googleapis.com/css2?family=DynaPuff&display=swap">
+</head>
+<body>
+
+	<div id = "background"></div>
+
+	<div class="container">
+      <div class="box">
+        <span style="--i: 1">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 2">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 3">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 4">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 5">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 6">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 7">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 8">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 9">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 10">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 11">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 12">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 13">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 14">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 15">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+        <span style="--i: 16">
+          <i>Imagine</i>
+          Believe
+          <i>Achieve</i>
+        </span>
+      </div>
+    </div>
+
+    /* Scripts */
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+var setVanta = ()=>{
+if (window.VANTA) window.VANTA.NET({
+  el: ".s-page-1 .s-section-1 .s-section",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+}
+_strk.push(function() {
+  setVanta()
+  window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+})
+</script>
+    <script src="rotate.js"></script> <!-- Custom JavaScript -->
+
+</body>
+</html>
