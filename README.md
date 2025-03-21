@@ -12,7 +12,7 @@ A visually appealing **3D rotating text animation** placed over an interactive *
 ---
 
 ## 🚀 **Live Demo**
-🔗 **[View Live Demo]([https://your-username.github.io/3d-rotate-animation/](https://kiran-kata.github.io/3D-rotate-animation-with-vanta-js/))**  
+🔗 [View Live Demo]([https://your-username.github.io/3d-rotate-animation/](https://kiran-kata.github.io/3D-rotate-animation-with-vanta-js/) 
 
 
 ---
